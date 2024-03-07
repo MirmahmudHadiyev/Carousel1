@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/images1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 4s linear;
+    animation: bodyanime 11s linear infinite ;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.header .logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.header .list ul{
+    list-style: none;
+}
+
+.header .list ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+.header .list ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+}
+
+.description span{
+    color: orangered;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.description h1{
+    font-size: 55px;
+}
+
+.description p{
+    max-width: 100%;
+    width: 500px;
+    line-height: 1.5;
+}
+
+.image_slidr{
+    width: 430px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-30%);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.image_container{
+display: flex;
+gap: 20px;
+transition: all 4s linear;
+animation: imganime 11s linear infinite;
+}
+
+.image_container img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+@keyframes imganime {
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0); 
+    }
+    10%{
+        transform: translateX(0); 
+    }
+    15%{
+        transform: translateX(0); 
+    }
+    20%{
+        transform: translateX(-220px);
+    }
+    25%{
+        transform: translateX(-220px);
+    }
+    30%{
+        transform: translateX(-220px);
+    }
+    35%{
+        transform: translateX(-220px);
+    }
+    40%{
+        transform: translateX(-220px);
+    }
+    45%{
+        transform: translateX(-220px);
+    }
+    50%{
+        transform: translateX(-440px);
+    }
+    55%{
+        transform: translateX(-440px);
+    }
+    60%{
+        transform: translateX(-440px);
+    }
+    65%{
+        transform: translateX(-440px);
+    }
+    70%{
+        transform: translateX(-440px);
+    }
+    75%{
+        transform: translateX(-650px);
+    }
+    80%{
+        transform: translateX(-650px);
+    }
+    85%{
+        transform: translateX(-650px);
+    }
+    90%{
+        transform: translateX(-650px);
+    }
+    95%{
+        transform: translateX(-650px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes bodyanime {
+    0%{
+        background-image: url(images/download.jfif);
+    }
+    5%{
+        background-image: url(images/download.jfif); 
+    }
+    10%{
+        background-image: url(images/download.jfif); 
+    }
+    15%{
+        background-image: url(images/download.jfif);
+    }
+    20%{
+        background-image: url(images/images.jfif);
+    }
+    25%{
+        background-image: url(images/images.jfif);
+    }
+    30%{
+        background-image: url(images/images.jfif);
+    }
+    35%{
+        background-image: url(images/images.jfif);
+    }
+    40%{
+        background-image: url(images/images.jfif);
+    }
+    45%{
+        background-image: url(images/images.jfif);;
+    }
+    50%{
+        background-image: url(images/images1.jfif);
+    }
+    55%{
+        background-image: url(images/images1.jfif);
+    }
+    60%{
+        background-image: url(images/images1.jfif);
+    }
+    65%{
+        background-image: url(images/images1.jfif);
+    }
+    70%{
+        background-image: url(images/images1.jfif);
+    }
+    75%{
+        background-image: url(images/images2.jfif);
+    }
+    80%{
+        background-image: url(images/images2.jfif);
+    }
+    85%{
+        background-image: url(images/images2.jfif);
+    }
+    90%{
+        background-image: url(images/images2.jfif);
+    }
+    95%{
+        background-image: url(images/images2.jfif);
+    }
+    100%{
+        background-image: url(images/download.jfif);
+    }
+}
